@@ -1,0 +1,121 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: "poppins",sans-serif;
+  box-sizing: border-box;
+}
+/* navbar */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 31px 83px;
+  background-color: #000;
+  height: 35px;
+  gap: 20px;
+}
+.logo{
+  margin-left: 10px;
+}
+.grow-list{
+flex-grow: 1;
+}
+img{
+  height: 32px;
+  width: 92px;
+}
+.line{
+  width: 1px;
+  height: 30px;
+  background-color: #fff;
+  margin-left: 0px;
+  overflow: hidden;
+}
+.list {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  list-style: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-left: 64px;
+}
+.button-small{
+  background-color: #ba0cc5;
+  border-radius: 6px;
+  font-family: "poppins";
+  color: #fff;
+  cursor: pointer;
+  border: none;
+margin-right: 1px;
+align-items: last baseline;
+}
+
+.logo,
+.list-item {
+  cursor: pointer;
+}
+
+.button-small {
+  padding: 10px 15px;
+  background: #ba0cc5;
+  border-radius: 6px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* hero */
+
+.hero {
+  background-image: url("assets/bg.png");
+  background-size: contain;
+  background-attachment: fixed;
+  height: 100vh;
+  text-align: center;
+}
+
+.hero-heading {
+  max-width: 400px;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+  padding-top:100px;
+}
+
+.hero-description {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  color: #ffffff;
+}
+
+.button-large {
+  background: #e539f1;
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 15px;
+  cursor: pointer;
+}
