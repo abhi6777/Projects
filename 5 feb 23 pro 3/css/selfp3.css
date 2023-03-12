@@ -13,6 +13,8 @@
   background-color: #000;
   height: 35px;
   gap: 20px;
+  font-weight: 300;
+  font-family: sans-serif;
 }
 .logo{
   margin-left: 10px;
