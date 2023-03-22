@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    font-family: "IBM Plex Sans", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+    background-color: #f0f4f5;
+    overflow: hidden;
+    margin: auto;
+}
+
+/* nevigation bar */
+nav{
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+nav img{
+    width: 150px;
+}
+.list ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.list ul li a{
+    text-decoration: none;
+    text-align: center;
+    margin-right: 50px;
+    font-weight: 800;
+    color: black;
+}
+nav ul li:first-child{
+    font-weight: bolder;
+    font-size: larger;
+    color: #20bc7e;
+}
+
+/* hero section */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+main section{
+    width: 50%;
+}
+.hero-left{
+    margin-left: 10px;
+    position: relative;
+}
+
+.topAngle{
+    width: 25px;
+}
+.hero-left h1{
+font-size: 70px;
+}
+.hero-left p{
+    color: #7c7c7c;
+    font-size: 18px;
+    margin: 20px 0px;
+}
+.bottomAngle{
+    width: 25px;
+    position: absolute;
+    right: 25px;
+}
+.stethoscope{
+    position: absolute;
+    width: 90%;
+    top: -60px;
+    right: -25%;
+    z-index: -1;
+}
+.mouse{
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+    width: 30px;
+}
+.hero-left button{
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 40px;
+    background-color: #20bc7e;
+    font-size: 25px;
+    font-weight: 700;
+}
+.hero-left button:hover{
+    cursor: pointer;
+    color: black;
+}
+
+/* hero right section */
+.greenBox,.yellowBox{
+    position: absolute;
+    right: 0;
+}
+.greenBox{
+    width: 35%;
+    bottom: 50px;
+}
+.yellowBox{
+    width: 30%;
+    bottom: 50px;
+}
+.doctor{
+    position: relative;
+    right: 0px;
+    left: 0;
+    height: 800px;
+}
+
+/* frame 2 sec */
+
+.hero{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+}
+.hero div h1{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  color: #20BC7E;
+  font-weight: 800;
+  font-size: 30px;
+}
+.description{
+    width: 50%;
+}
+.hero div p {
+    gap: 20px;
+    text-align: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.doctors,.customers,.students{
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about div span{
+    color: #20BC7E;
+    font-size: 25px;
+    font-weight: 800;
+}
+.about div p{
+    color: black;
+    font-weight: 600;
+    font-size: 25px;
+}
+.about:hover{
+    cursor: wait;
+}
+.about{
+    display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
