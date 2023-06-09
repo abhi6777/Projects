@@ -1,0 +1,21 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body {
+     font-family: Arial, sans-serif;
+   }
+   
+   h1 {
+     text-align: center;
+   }
+   
+   div {
+     margin: 10px 0;
+   }
+   
+   input, button {
+     padding: 5px;
+   }
+   

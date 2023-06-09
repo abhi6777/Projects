@@ -1,0 +1,28 @@
+body {
+     font-family: Arial, sans-serif;
+     margin: 20px;
+   }
+   
+   h1 {
+     text-align: center;
+   }
+   
+   #customerDetails, #transaction {
+     margin-bottom: 20px;
+   }
+   
+   label {
+     display: inline-block;
+     width: 80px;
+   }
+   
+   input[type="text"], input[type="number"] {
+     width: 200px;
+     padding: 5px;
+   }
+   
+   button {
+     padding: 5px 10px;
+     margin-left: 10px;
+   }
+   

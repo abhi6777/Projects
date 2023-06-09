@@ -12,7 +12,7 @@ decrementbtn.addEventListener("click",() => {
      const value = Number 
      (displayvalue.innerText);
 if(value > 0) {
-     displayvalue.innerText = value - 1;
+     displayvalue.innerText = value -1;
 } else {
      alert ("negative value not allowed");
 }

@@ -1,0 +1,36 @@
+body {
+     font-family: Arial, sans-serif;
+     text-align: center;
+     margin-top: 50px;
+   }
+   
+   h1 {
+     margin-bottom: 20px;
+   }
+   
+   form {
+     margin-bottom: 20px;
+   }
+   
+   label {
+     display: block;
+     margin-bottom: 5px;
+   }
+   
+   input {
+     margin-bottom: 10px;
+     padding: 5px;
+   }
+   
+   button {
+     padding: 10px 20px;
+   }
+   
+   #error-message {
+     color: red;
+   }
+   
+   #success-message {
+     color: green;
+   }
+   

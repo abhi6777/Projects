@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>generate random no </title>
+
+</head>
+<body>
+     <h1>Random Number Generator</h1>
+<p id="randomNumber"></p>
+<script>
+// Generate a random number between 1 and 100
+const randomNumber = () => Math.floor(Math.random() * 100) + 1;
+
+// Display the random number on the page
+document.getElementById("randomNumber").innerHTML = randomNumber();
+</script>
+</body>
+</html>

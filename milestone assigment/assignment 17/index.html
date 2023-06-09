@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Banking application </title>
+
+     <!-- Linking Css -->
+     <link rel="stylesheet" href="style.css">
+
+     <!-- linking css -->
+     <script src="script.js"></script>
+
+</head>
+<body>
+     <h1>Banking Application</h1>
+
+     <div id="customerDetails">
+       <h2>Customer Details</h2>
+       <label for="name">Name:</label>
+       <input type="text" id="name">
+       <label for="balance">Balance:</label>
+       <input type="text" id="balance" readonly>
+     </div>
+   
+     <div id="transaction">
+       <h2>Transaction</h2>
+       <label for="amount">Amount:</label>
+       <input type="number" id="amount">
+       <button onclick="deposit()">Deposit</button>
+       <button onclick="withdraw()">Withdraw</button>
+     </div>
+</body>
+</html>

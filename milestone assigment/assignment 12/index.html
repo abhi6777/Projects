@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>calulate rentle cost</title>
+     
+     <!-- linking css -->
+     <link rel="stylesheet" href="style.css">
+
+     <!-- linking script -->
+     <script src="script.js"></script>
+
+</head>
+<body>
+     <label for="daysInput">Enter number of days rented:</label>
+     <input type="number" id="daysInput">
+     
+     <label for="carTypeSelect">Select car type:</label>
+     <select id="carTypeSelect">
+       <option value="economy">Economy</option>
+       <option value="midsize">Midsize</option>
+       <option value="luxury">Luxury</option>
+     </select>
+     
+     <button onclick="calculateRentalCost()">Calculate Rental Cost</button>
+   
+     <div id="output"></div>
+</body>
+</html>
