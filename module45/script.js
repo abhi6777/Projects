@@ -176,3 +176,26 @@ async function MultipleRequests() {
 // the console. For example, you could use the API at https://jsonplaceholder.typicode.com/posts to retrieve a list
 // of posts, and then display them to the browser console.
 
+function fetchMethod() {
+     fetch("https://jsonplaceholder.typicode.com/posts")
+     .then(response => response.json())
+     .then(result => {console.log(result)})
+     .catch(error => console.log(error));
+}
+
+// fetchMethod();
+
+
+// 9. Error Handling
+// Write a JavaScript program that uses the Fetch method to retrieve data from an API, and then handles errors
+// that may occur. For example, you could use the API at https://jsonplaceholder.typicode.com/posts/123456789
+// to simulate an error, and then display an error message on the webpage.
+
+function handleError() {
+     fetch("https://jsonplaceholder.typicode.com/posts/123456789")
+     .then(result => result.json())
+     .then(result => console.log(result))
+     .catch(error => console.log("error: ", error));
+}
+
+handleError();
