@@ -1,0 +1,111 @@
+Q1. What is RDBMS? Why do industries use RDBMS?
+
+Ans:- RDBMS stands for relationship database management system . It establishes relation with different table using sturucture query language. 
+industries use rdbms for stuructured data , data integrity, security,relationship, powerful querying, etc features.
+
+
+Q2. Explain the relationship data model in depth.
+
+Ans:- It is a way of organizing data into tables, in a row column sturucture, each table has primary key , alternate keys, . All the data establishes relation between one another . 
+
+Types of Relationships:
+One-to-One (1:1)
+Each row in A ↔️ one row in B
+
+e.g., Person ↔️ Passport
+
+One-to-Many (1:N)
+One row in A ↔️ multiple rows in B
+
+e.g., Customer ↔️ Orders
+
+Many-to-Many (M:N)
+Rows in A ↔️ many in B and vice versa (need junction table)
+
+e.g., Students ↔️ Courses
+
+
+Q3. What is the importance of Relationships in a Database management system? Explain the types
+of relationships.
+
+Ans:- Relationships connects the different entity altogether which helps in easy data connection and retrievals . 
+
+There are mainly 4 types of entity relationship 
+1.> one to one 
+
+2.> one to many 
+
+3.> many to one 
+
+4.> many to many
+
+Q4. Explain the different types of Keys in RDBMS considering a real-life scenario.
+
+Ans:- so there are mainly 6 types of keys 
+
+1.> Primary Key – Unique ID for each record (like your passport number).
+
+2.> Candidate Key – Potential primary keys (all your unique IDs, passport, driver’s license).
+
+3.> Composite Key – Combination of keys to identify a record (like your first name + birthdate if alone isn’t unique).
+
+4.> Foreign Key – Links to a primary key in another table (like your college ID linked to your department).
+
+5.> Alternate Key – Candidate keys not chosen as primary (your driver’s license if passport is primary).
+
+6.> Artificial Key – System-generated key, not based on real data (like an auto-incremented ID).
+
+Q5. Write a short note on Single Responsibility Principle.
+
+Ans:- In RDBMS, Single Responsibility Principle means each table is responsible for storing data related to one specific entity or purpose.
+
+Q6. Explain the different types of errors that could arise in a denormalized database.
+
+Ans:- different types of errors in denormalized database are :-
+
+1.> insertion anomaly
+2.> deletion anomaly
+3.> Update anomaly
+
+
+Q7. What is normalization and what is the need for normalization?
+
+Ans:- Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity. It’s needed to avoid anomalies and keep data consistent.
+
+
+Q8. List out the different levels of Normalization and explain them in detail.
+
+Ans:- The different types of normalization are:- 
+1.> 1NF = The shell should not contain multiple values. 
+The table should have a primary key.
+No repeating groups.
+
+2.> 2NF = The table must be in 1NF.
+The table should not have any partial functional dependency.
+
+3.> 3NF = The table must be in 2NF.
+The table should not have any transitive dependency (a>b>c)
+
+4.> BCNF =The table must be in 3NF.
+every determinant is a candidate key.
+
+5.> 4NF = Deals with multi-valued dependencies (rare, advanced).
+
+6.> 5Nf =  Deals with join dependencies (super advanced, often ignored).
+
+
+Q9. What are joins and why do we need them?
+
+Ans:- Joins are used to combine rows from two or more tables based on related columns.
+We need them to fetch complete data that’s spread across multiple tables.
+
+Q10. Explain the different types of joins?
+
+Ans:- There are mainly four types of join 
+INNER JOIN – Returns only matching rows.
+
+LEFT JOIN – All rows from left table + matched rows from right.
+
+RIGHT JOIN – All rows from right table + matched rows from left.
+
+FULL JOIN – All rows when there’s a match in either table.
