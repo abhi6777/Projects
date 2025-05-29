@@ -5,23 +5,23 @@ export const home = (req, res) => {
      res.end();
 };
 
-export const createUser = (req, res) => {
+export const createUser = async (req, res) => {
      try {
-          const {name, email } = req.body;
+          const { name, email } = req.body;
 
           if(!name || !email) {
                throw new Error("Name and email are required");
           }
 
           // check if user is already registered
-          const userExists = User.findOne({email});
+          const userExists = await User.findOne({email});
 
           // if user exists throw error
           if(userExists) {
                throw new Error("User already exists");
           }
 
-          const user = User.create ({
+          const user = await User.create ({
                name,
                email
           });
@@ -40,6 +40,55 @@ export const createUser = (req, res) => {
           })          
      }
 }
-export const getUser = (req, res) => {}
-export const editUser = (req, res) => {}
-export const deleteUser = (req, res) => {}
+
+export const getUser = async (req, res) => {
+     try {
+          const user = await User.find({});
+          res.status(200).json({
+               success: true,
+               user
+          })
+          
+     } catch (error) {
+          console.log(error);
+          res.status(400).json({
+               success: false,
+               message: error.message
+          })
+     }
+}
+
+export const editUser = async (req, res) => {
+     try {
+          const user = await User.findByIdAndUpdate(req.params.id, req.body)
+          res.status(200).json({
+               success: true,
+               message: "user update Successfully"
+          })
+          
+     } catch (error) {
+          console.log(error);
+          res.status(400).json({
+               success: false,
+               message: error.message
+          })
+     }
+}
+
+export const deleteUser = async (req, res) => {
+     try {
+          const userId = req.params.id;
+          const user = await User.findByIdAndDelete(userId);
+          res.status(200).json({
+               success: true,
+               message: "user deleted successfully"
+          })
+          
+     } catch (error) {
+          console.log(error);
+          res.status(400).json({
+               success: false,
+               message: error.message
+          })
+     }
+}
