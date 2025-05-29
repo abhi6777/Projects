@@ -6,6 +6,6 @@ router.get("/", home);
 router.post("/createuser", createUser);
 router.get("/getusers", getUser);
 router.delete("/deleteuser/:id", deleteUser);
-router.put("/updateuser:id", editUser)
+router.put("/updateuser/:id", editUser)
 
 export { router };

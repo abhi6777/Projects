@@ -1,3 +1,11 @@
 {
-  "cSpell.words": ["Abhimanyu", "createuser", "Kumar", "Mahto"]
+  "cSpell.words": [
+    "Abhimanyu",
+    "createuser",
+    "deleteuser",
+    "getusers",
+    "Kumar",
+    "Mahto",
+    "updateuser"
+  ]
 }
