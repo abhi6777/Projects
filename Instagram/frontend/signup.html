@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>SignUp</title>
+
+     <link rel="stylesheet" href="form.css">
+</head>
+<body>
+     <main>
+          <form action="http://localhost:5000/signup" method="POST" id="signupForm" target="_self">
+               <h1>Instagram SignUp</h1>
+               <div class="fill">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autofocus  placeholder="Name" required maxlength="50">
+               </div>
+               <div class="fill">
+                    <label for="username">UserName</label>
+                    <input type="text" id="username" name="username" placeholder="UserName" required maxlength="20">
+               </div>
+               <div class="fill">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required maxlength="50">
+               </div>
+               <div class="fill">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required  placeholder="Password" maxlength="50">
+               </div>
+               <div class="fill">
+                    <label for="confirmPassword">ConfirmPassword</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword"  placeholder="ConfirmPassword" required maxlength="50">
+               </div>
+               <div class="fill">
+                    <label for="bio">Bio</label>
+                    <input type="text" id="bio" name="bio" placeholder="Enter your bio" required maxlength="50">
+               </div>
+               <div>
+                    <button id="submitForm" type="submit" >SignUp</button>
+               </div>
+
+               <div id="spanBottom">
+                    <a href="">Forget Password?</a>
+                    <a href="login.html">Login</a>
+               </div>
+          </form>
+     </main>
+     
+
+     <!-- Added js file -->
+     <script src="script.js"></script>
+</body>
+</html>

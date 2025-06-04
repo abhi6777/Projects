@@ -1,5 +1,6 @@
 const userModel = require("../model/user.schema");
 const emailValidator = require("email-validator");
+const bcrypt = require('bcrypt');
 
 const signup = async (req, res) => {
   try {
@@ -67,15 +68,15 @@ const signin = async (req, res) => {
       });
     };
 
-    const user = await userModel.findOne({email, password}).select("+password");
+    const user = await userModel.findOne({ email }).select("+password");
 
     // if user user does not exist or password does not match 
-    if (!user || password !== user.password) {
+    if (!user || !(bcrypt.compare(password, user.password))) {
       return res.status(400).json({
         success: false,
         message: "Invalid credentials"
-      })
-    }
+      });
+    };
 
     const token = user.jwtToken();
     user.password = undefined;
@@ -101,6 +102,45 @@ const signin = async (req, res) => {
   };
 };
 
+const getuser = async (req, res) => {
+  const userId = req.user.id;
+
+  try {
+    const user = await userModel.findById(userId);
+    res.status(200).json({
+      success: true,
+      data: user
+    })
+    
+  } catch (error) {
+    console.error(error);
+    res.status(400).json({
+      success: false,
+      message: "There is some error in loading user"
+    })
+  }
+};
+
+const logout = async (req, res) => {
+  try {
+    const cookieOptions = {
+      expires: new Date(),
+      httpOnly: true
+    }
+    res.cookie("token", null, cookieOptions);
+    res.status(200).json({
+      success: true,
+      message: "Logged out Successfully"
+    })
+    
+  } catch (error) {
+    return res.status(400).json({
+      success: false,
+      message: error.message
+    })
+  }
+};
+
 module.exports = {
-  signup, signin
+  signup, signin, getuser, logout
 };
