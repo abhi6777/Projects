@@ -27,7 +27,3 @@ CineBot is a lightweight movie search web app built using HTML, JavaScript, and 
 
 ## 🚀 Getting Started
 
-### 1. Clone this repo
-```bash
-git clone https://github.com/your-username/cinebot.git
-cd cinebot
