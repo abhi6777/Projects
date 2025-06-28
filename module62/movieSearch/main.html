@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+     <!-- Navigation Panel -->
+     <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+               <!-- Navigation Bar -->
+               <h1 class="ps-4"><a class="navbar-brand" href="#">CineBot</a></h1>               
+               <form class="d-flex" role="search">
+                    <input id="SearchBox" class="form-control me-3 " type="search" placeholder="Search Movie" aria-label="Search"/>
+                    <button id="searchButton" class="btn btn-success" type="submit">Search</button>
+               </form>
+               <!-- Main Section show movie card -->
+          </div>
+     </nav>
+     <!-- Main section to show movies cards -->
+     <div id="mainCards" class="container-fluid p-4 d-flex flex-wrap gap-3" >
+          <!-- All the cards are dynamically created using js -->
+          <h1>Search For the Movie In Search Box</h1>
+     </div>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+     <script type="module" src="script.js"></script>
+     <script type="module" src="movieCard.js"></script>
+</body>
+</html>
