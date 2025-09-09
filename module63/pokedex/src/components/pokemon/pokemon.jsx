@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 function Pokemon({name, url, id}) {
      return (
-          <div className="pokemon">
-               <Link to={`/pokemon/${id}`}>
-                    <div className='pokemonName'>{name}</div>
-                    <img className='pokemonImg' src={url} alt="" />
-               </Link>
-          </div>
+          <Link to={`/pokemon/${id}`} className='pokemon-wrapper'>
+               <div className="pokemon">
+                         <div className='pokemonName'>{name}</div>
+                         <img className='pokemonImg' src={url} alt="" />
+               </div>
+          </Link>
      )
 };
 

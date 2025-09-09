@@ -1,3 +1,10 @@
+.pokemon-wrapper {
+     display: block;
+     flex-basis: 30%;
+     text-decoration: none;
+     color: black;
+}
+
 .pokemon {
      flex-basis: 30%;
      max-height: 300px;
